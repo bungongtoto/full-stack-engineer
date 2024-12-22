@@ -1,0 +1,28 @@
+.banner{
+    background-color: rgba(149, 1, 6, 0.917);
+    color: white;
+    text-align: center;
+    margin-top: 60px;
+    padding: 20px;
+}
+
+#small-gritty {
+    height: 300px;
+    width: 300px;
+    position: sticky;
+    top: 20px;
+}
+
+#gritter{
+    color: rgba(149, 1, 6, 0.917);
+    font-size: 100px;
+}
+
+
+.bold{
+    font-weight: 900;
+}
+
+li {
+    font-size: 40px;
+}
