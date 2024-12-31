@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resourses/css/style.css">
+    <title>Cheat Sheet Display Property</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#inline">Inline</a></li>
+                <li><a href="#block">Block</a></li>
+                <li><a href="#inline-block">Inline-Block</a></li>
+                <li><a href="#key-differences">Key Differences</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introduction">
+            <h1>Understanding the CSS display Property: Inline, Inline-Block, and Block</h1>
+            <article>
+                <p>The CSS <code>display</code> property is fundamental to controlling the layout and appearance of
+                    elements on a
+                    webpage. It determines how an element is rendered in relation to its surrounding content. Among its
+                    numerous values, three commonly used ones are <code>inline</code>, <code>inline-block</code>, and
+                    <code>block</code>. This article explores
+                    these values, their behaviors, and practical applications.
+                </p>
+            </article>
+        </section>
+
+        <section id="inline">
+            <article>
+                <h2>Inline</h2>
+                <h3>Behavior</h3>
+                <p>Elements with display: inline flow naturally with text, appearing on the same line as other inline
+                    elements. They:</p>
+                <ul>
+                    <li>Do not start on a new line.</li>
+                    <li>Ignore explicit width and height settings; their size is dictated by the content.</li>
+                    <li>Apply padding and margins, but these do not disrupt the flow of text.</li>
+                </ul>
+            </article>
+            <aside>
+                <h3>Examples</h3>
+                <p>Common inline elements include <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>,
+                    <code>&lt;strong&gt;</code>, and <code>&lt;em&gt;</code>.
+                </p>
+                <h3>Use Case</h3>
+                <p>The <code>inline</code> value is ideal for styling text or small elements within a line, such as
+                    links or emphasized words</p>
+            </aside>
+            <h3>Illustration</h3>
+            <div class="illustration-box">
+                <p>
+                    <span style="display: inline; background: yellow;">Inline Element</span> continues on the same line.
+                </p>
+            </div>
+        </section>
+
+        <section id="block">
+            <article>
+                <h2>Block</h2>
+                <h3>Behavior</h3>
+                <p>Elements with <code> display: block</code> occupy the full width of their container by default. They:
+                </p>
+                <ul>
+                    <li>Always start on a new line, pushing subsequent elements below.</li>
+                    <li>Allow explicit width, height, margin, and padding to be applied.</li>
+                </ul>
+            </article>
+            <aside>
+                <h3>Examples</h3>
+                <p>
+                    Common block elements include <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>,
+                    <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>, <code>&lt;section&gt;</code>, and
+                    <code>&lt;article&gt;</code>.
+                </p>
+                <h3>Use Case</h3>
+                <p>The <code>block</code> value is suitable for creating distinct sections or containers for content.
+                </p>
+            </aside>
+            <h3>Illustration</h3>
+            <div class="illustration-box">
+                <div style="display: block; background: lightblue; padding: 10px;">
+                    Block Element
+                </div>
+            </div>
+        </section>
+
+        <section id="inline-block">
+            <article>
+                <h2>Inline-Block</h2>
+                <h3>Behavior</h3>
+                <p>The <code>inline-block </code>value combines characteristics of both <code>inline</code> and
+                    <code>block</code>. Elements:
+                </p>
+                <ul>
+                    <li>Stay in line with text, like <code>inline</code> elements.</li>
+                    <li>Respect width, height, margin, and padding settings, like <code>block</code> elements.</li>
+                </ul>
+            </article>
+            <aside>
+                <h3>Examples</h3>
+                <p><code>inline-block</code> is commonly used for buttons, grid items, and layout components requiring
+                    both inline positioning and block-like styling.</p>
+                <h3>Use Case</h3>
+                <p>It is perfect for aligning multiple block-like elements on the same line while maintaining their
+                    individual dimensions and spacing.</p>
+            </aside>
+            <h3>Illustration</h3>
+            <div class="illustration-box">
+                <div style="display: inline-block; width: 100px; background: lightgreen; margin: 5px;">
+                    Inline-Block Element
+                </div>
+                <div style="display: inline-block; width: 100px; background: lightcoral; margin: 5px;">
+                    Another Element
+                </div>
+            </div>
+        </section>
+
+        <section id="key-differences">
+            <h2>Key Differences at Glance</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Property</th>
+                        <th scope="col">inline</th>
+                        <th scope="col">block</th>
+                        <th scope="col">inline-block</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Line Behavior</td>
+                        <td>Stays in line with text</td>
+                        <td>Starts on a new line</td>
+                        <td>Stays in line with text</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Width & Height</td>
+                        <td>Ignored</td>
+                        <td>Can be set</td>
+                        <td>Can be set</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Margins/Padding</td>
+                        <td>Applied but doesn’t affect layout</td>
+                        <td>Affects layout</td>
+                        <td>Affects layout</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>copywrite &copy; 2024 bungongtoto</p>
+    </footer>
+</body>
+
+</html>
