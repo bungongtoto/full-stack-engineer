@@ -1,0 +1,483 @@
+* {
+    background-color: black;
+    font-family: "Roboto Condense", Helvetica;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/body-background-image.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+
+/* header styles */
+header {
+    height: 70vh;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.logo-nav-container {
+    position: fixed;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    width: auto;
+    height: 55%;
+    margin-left: 2%;
+}
+
+nav {
+    width: 50%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+nav li {
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: inline-block;
+    width: 20%;
+}
+
+nav li a {
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+}
+
+nav li a:hover {
+    border-color: white;
+}
+
+nav li a:active {
+    border-color: red;
+}
+
+
+.header-text-container {
+    margin-left: 2%;
+    position: relative;
+    top: 25%;
+    z-index: -1;
+}
+
+.header-text-container h1 {
+    font-size: 6rem;
+    width: 55%;
+    margin: 0;
+}
+
+/* main styles */
+main {
+    z-index: -1;
+    background-color: transparent;
+}
+
+/* sections styles */
+
+section {
+    padding: 8%;
+}
+
+#transparent-section {
+    background-color: transparent;
+    height: 70vh;
+    z-index: -6;
+}
+
+#mission {
+    text-align: center;
+}
+
+#porfolio,
+#team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.porfolio-container,
+.team-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.porfolio-box,
+.team-box {
+
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.porfolio-box {
+    /* border: 1px solid red; */
+    width: 300px;
+    height: 350px;
+}
+
+.porfolio-stats-box {
+    width: 200px;
+    height: 200px;
+    border: 10px solid white;
+    border-radius: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.team-box {
+    margin: 4%;
+}
+
+.team-box img {
+    width: 300px;
+    height: auto;
+}
+
+/* footer styles */
+
+footer {
+    /* position: relative;
+    top: 0.0.05vh; */
+    height: 10vh;
+    width: 100%;
+    background-color: white;
+    opacity: 0.9;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-div,
+.fa-linkedin-in,
+.fa-facebook,
+.fa-instagram,
+.fa-envelope,
+footer h3 {
+    background-color: white;
+    opacity: 0.9;
+    color: black;
+}
+
+.footer-1 {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-linkedin-in,
+.fa-facebook,
+.fa-instagram,
+.fa-envelope {
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 1700px) {
+
+    .header-text-container h1 {
+        width: 60%;
+        font-size: 5rem;
+    }
+}
+
+
+@media only screen and (max-width: 1371px) {
+    p {
+        font-size: 1.3rem;
+    }
+
+    .header-text-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-text-container h1 {
+        width: 70%;
+        font-size: 5rem;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (max-width: 1099px) {
+
+
+    .header-text-container h1 {
+        width: 80%;
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (max-width: 971px) {
+
+    .header-text-container h1 {
+        width: 80%;
+        font-size: 4rem;
+    }
+}
+
+
+@media only screen and (max-width: 875px) {
+    p {
+        font-size: 1.2rem;
+    }
+
+    header {
+        height: 60vh;
+    }
+
+    nav {
+        width: 60%;
+    }
+
+    .header-text-container {
+        top: 35%;
+    }
+
+    .header-text-container h1 {
+        width: 80%;
+        font-size: 3rem;
+    }
+
+    .fa-linkedin-in,
+    .fa-facebook,
+    .fa-instagram,
+    .fa-envelope {
+        font-size: 1.5rem;
+    }
+
+    footer h3 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 675px) {
+
+    p {
+        font-size: 1rem;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        height: 40vh;
+    }
+
+    .logo-nav-container {
+        height: 20%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #logo {
+        height: 50%;
+        width: auto;
+    }
+
+    nav {
+        width: 80%;
+    }
+
+
+    nav ul {
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .header-text-container {
+        top: 60%;
+        margin-left: 0;
+        height: 75%;
+    }
+
+    .header-text-container h1 {
+        width: 80%;
+        font-size: 2.5rem;
+    }
+
+    .fa-linkedin-in,
+    .fa-facebook,
+    .fa-instagram,
+    .fa-envelope {
+        font-size: 1.2rem;
+    }
+
+    footer h3 {
+        font-size: 0.7rem;
+    }
+}
+
+
+@media only screen and (max-width: 508px) {
+
+    h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    header {
+        height: 50vh;
+    }
+
+    .header-text-container {
+        top: 60%;
+        height: 50%;
+    }
+
+    nav {
+        width: 85%;
+    }
+
+    .header-text-container h1 {
+        font-size: 2rem;
+
+    }
+
+    .fa-linkedin-in,
+    .fa-facebook,
+    .fa-instagram,
+    .fa-envelope {
+        font-size: 1rem;
+    }
+
+    footer h3 {
+        font-size: 0.6rem;
+    }
+
+}
+
+@media only screen and (max-width: 381px) {
+    h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.7rem;
+    }
+
+    header {
+        height: 40vh;
+    }
+
+
+    #logo {
+        height: 35%;
+        width: auto;
+    }
+
+
+    nav li {
+        font-size: 1rem;
+    }
+
+    .header-text-container h1 {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 250px) {
+
+    h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.5rem;
+    }
+
+    nav {
+        width: 90%;
+    }
+
+    nav li {
+        font-size: 0.9rem;
+    }
+
+    .header-text-container h1 {
+        font-size: 1.2rem;
+    }
+
+    .porfolio-box {
+        margin: 30px;
+    }
+
+    .porfolio-stats-box {
+        width: 150px;
+        height: 150px;
+        border-radius: 150px;
+    }
+
+    .team-box img {
+        width: 200px;
+        height: 300px;
+    }
+
+
+
+}
